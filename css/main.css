@@ -1,0 +1,322 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    width: 100%;
+    height: 44px;
+    background-color: rgb(0, 0, 0,0.8);
+    position: fixed;
+}
+.nav-content{
+    width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-content li{
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+.nav-content li:hover{
+    opacity: 1;
+}
+
+.nav-content li a{
+    text-decoration: none;
+    color: #f5f5f5f7;
+    font-weight: 400;
+    font-size: 12px;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.nav-content .apple-icon{
+    width: 14px;
+    height: 44px;
+    background-image: url(../images/apple.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.nav-content .search-icon{
+    width: 30px;
+    height: 44px;
+    background-image: url(../images/search.svg);
+    background-repeat: no-repeat;
+    background-size: 15px 88px;
+    background-position: 8px 0;
+}
+.nav-content .bag-icon{
+    width: 13px;
+    height: 44px;
+    background-image: url(../images/bag.svg);
+    background-size: 13px 44px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main{
+    padding-top: 40px;
+}
+.main .add{
+    width: 100%;
+    height: 40px;
+    padding-top: 0.94118em;
+    padding-bottom: 0.94118em;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "SF Pro SC","SF Pro Text","SF Pro Icons","PingFang SC","Helvetica Neue","Helvetica","Arial",sans-serif;
+    font-size: 14px;
+    line-height: 1.47059;
+    font-weight: 350;
+    color: #1d1d1f;
+}
+.main .add a{
+    text-decoration: none;
+    color: #06c;
+}
+.main .add a:hover{
+    text-decoration: underline;
+}
+.product-area{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 692px);
+}
+.product-area .full-sapce{
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+.product-area .MacBookAir{
+    width: 100%;
+    height: 100%;
+    background-size: 3008px 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../images/macbookair.png);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 30%;
+}
+.product-area .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content h1{
+    font-size: 48px;
+}
+.content h3{
+    font-size: 21px;
+    font-weight: 300;
+}
+.content .m2{
+    margin-top: 8px;
+    background-image: url(../images/m2.png);
+    background-size: 244px 36px;
+    width: 244px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+.content .tips{
+    font-size: 21px;
+    color: #86868b;
+    margin-top: 11px;
+}
+.content .action-area{
+    display: flex;
+    margin-top: 10px;
+}
+.content a{
+    text-decoration: none;
+    color:#06c;
+    font-size: 21px;
+}
+.product .content a:hover{
+    text-decoration: underline;
+}
+.product .content a::after{
+    content: " >";
+}
+.content a:not(:first-child) {
+    margin-left: 32px;
+}
+.product.mbp13{
+    background-image: url(../images/mbp13.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding: 47px;
+}
+.content .m2p{
+    margin-top: 8px;
+    background-image: url(../images/m2p.png);
+    background-size: 244px 36px;
+    width: 244px;
+    height: 36px;
+    background-repeat: no-repeat;
+}
+.product.mbp13 h1{
+    color: white;
+}
+.product.iphone13{
+    background-image: url(../images/iphone13.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 3008px 624px;
+}
+.product.iphone13-m{
+    background-image: url(../images/iphone13pro.png);
+    background-position: center;
+    background-size: 220% 90%;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+}
+.product.watch{
+    background-image: url(../images/whatch.png);
+    background-position: center;
+    background-size: 220% 90%;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+
+}
+.product.watch .content .series7{
+    background-image: url(../images/series7.png);
+    width: 146px;
+    height: 56px;
+    background-size: 146px 56px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.product.ipad{
+    background-image: url(../images/ipad.png);
+    background-position: center;
+    background-size: 220% 95%;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+}
+.product.ipad .content .ipad-img{
+    background-image: url(../images/ipad7.png);
+    width: 146px;
+    height: 56px;
+    background-size: 146px 56px;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.product.person{
+    background-image: url(../images/personal.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+}
+.product.person .content h1{
+    color: white;
+}
+.product.display{
+    background-image: url(../images/display.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    margin-top: 50px;
+}
+.product.pods{
+    background-image: url(../images/pods.png);
+    background-position: center;
+    background-size: 55% 45%;
+    background-repeat: no-repeat;
+    background-color: #fbfbfd;
+    padding-top: 50px;
+    background-color: black;
+    margin-top: 10px;
+}
+.product.pods .content h1{
+    color: white;
+}
+.product.pods .content h3{
+    color: white;
+}
+footer{
+    background-color: #f5f5f5f7;
+    margin-top: 12px;
+}
+footer .content{
+    width: 980px;
+    margin: 0 auto;
+    padding: 0 22px;
+}
+footer .content .footer-nav{
+    padding-top: 20px;
+    display: flex;
+}
+footer .content .footer-nav .col{
+    flex:1;
+}
+.links .label{
+    font-size: 12px;
+    color: #1d1d1f;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.links ul{
+    list-style: none;;
+}
+.links ul li{
+    margin-bottom: 10px;
+}
+.links ul li a{
+    color: #424245;
+    font-size: 12px;
+}
+.shopping-advise{
+    font-size: 12px;
+    color: #6e6e73;
+    border-bottom: 1px solid #d2d2d7;
+    padding-bottom: 8px;
+}
+.shopping-advise a{
+    font-size: 12px;
+}
+section.bottom-area{
+    padding:34px 0 21px;
+}
+.legal-area{
+    display: flex;
+}
+.legal-area .copyright{
+    font-size: 12px;
+    color: #6e6e73;
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.legal-area .legal-link a:last-child{
+    border-right: none;
+}
+.legal-area .legal-link a{
+    font-size: 12px;
+    color: #424245;
+    border-right: 1px solid #d2d2d7;
+    margin: 5px 7px 5px 7px;
+    padding-right: 10px;
+}
+section.bottom-area p{
+    font-size: 12px;
+    color: #424245;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
